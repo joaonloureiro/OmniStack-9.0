@@ -1,23 +1,86 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
-html, body, #root {
-  min-height: 100%;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  background: #000 url('./assets/background.jpg') no-repeat;
-  background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
-}
+  html, body, #root {
+    height: 100%;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  body, input, button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  body {
+    background: #000 url('./assets/background.jpg') no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-box {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: white;
+  }
+
+  .content-box p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  form {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-box form label {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .content-box form input {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+
+  .content-box button.btn {
+    border: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 42px;
+    background-color: #f05a5b;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .content-box button.btn:hover {
+    background-color: #e14f50;
+  }
